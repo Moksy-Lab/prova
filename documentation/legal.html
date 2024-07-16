@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="https://moksy.com/templates/prova/assets/images/branding/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta tags -->
+  <meta name="robots" content="index,follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="web">
+  <meta name="copyright" content="Free Professional e-Learning Templates.">
+  <meta name='language' content='English'>
+  <meta name="author" content="Adam Levine"> 
+
+  <!-- Canonical link -->
+  <link rel="canonical" href="https://moksy.com"/>
+
+  <!-- Designer and publisher info -->
+  <meta name="designer" content="GGLink">
+  <meta name="publisher" content="Adam Levine">
+
+  <!-- Twitter Cards  -->
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Free Professional e-Learning Templates"/>
+  <meta property="twitter:description" content="Explore our responsive, reusable, and well-documented e-learning templates built on top of Bootstrap."/>
+  <meta property="twitter:locale" content="English"/>
+  <meta property="twitter:image" content="https://moksy.com/templates/prova/assets/images/branding/logo.png"/>
+  <meta property="twitter:url" content="https://moksy.com"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Free Professional e-Learning Templates"/>
+  <meta property="og:description" content="Explore our responsive, reusable, and well-documented e-learning templates built on top of Bootstrap."/>
+  <meta property="og:locale" content="English"/>   
+  <meta property="og:image" content="https://moksy.com/templates/prova/assets/images/branding/logo.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="https://moksy.com"/>
+  <meta property="og:site_name" content="harro">
+  <meta property="fb:app_id" content=""/>
+
+  <!--favicons -->
+  <link rel="icon" sizes="16x16" type="image/png" href="https://moksy.com/templates/prova/assets/images/branding/favicon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Default Script tags -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/js/index.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
+/>
+
+<link rel="stylesheet" href="./assets/styles/style.css">
+<script> hljs.addPlugin(new CopyButtonPlugin());</script>
+
+  <!-- Replace the title name -->
+  <title>Prova - Documentation</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif; min-height: 100vh; display: flex; flex-direction: column;" class="dark:bg-slate-900 bg-white dark:text-white">
+  <!-- Header start here -->
+  <header class="w-full p-3 border-b dark:border-b  flex sticky top-0 z-10 dark:bg-slate-900 bg-white dark:text-white ">
+    <nav class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white">
+      <ul>
+        <li class="font-mono text-xl">
+          <a href="./index.html">
+            <img src="https://moksy.com/templates/prova/assets/images/branding/logo.png" alt="Prova"  class="mainlogo" style="width: 50px; height: 50px; border-radius: 50%;" />
+          </a>
+        </li>
+      </ul>
+      <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+        <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+          <a href="./docs.html">Documentation</a>
+        </li>
+        <div>
+          <ul class="flex">
+            <li class="mr-5 flex dark:flex">
+              <a href="https://moksy.com/templates/prova" target="_blank"><img src="./assets/svgs/website.svg" width="20px" alt="Live site" /></a>
+            </li>
+            <li class="mr-5 flex dark:flex">
+              <a href="https://github.com/moksy-Lab/" target="_blank"><img src="./assets/svgs/github.svg" alt="GitHub Link" /></a>
+            </li>
+            <li class="mr-5 flex dark:flex">
+              <a href="https://www.youtube.com/@moksy9311" target="_blank"><img src="./assets/svgs/youtube.svg" alt="Youtube " /></a>
+            </li>
+            <li class="mr-5 flex dark:flex">
+              <a href="https://www.facebook.com/moksyuk" target="_blank"><img src="./assets/svgs/facebook.svg" width="20px" alt="Facebook" /></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+    <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+  </header>
+  <!-- Header ends here -->
+
+  <div class="flex flex-col md:flex-row lg:flex-row">
+    <!-- Side menu starts here -->
+    <nav class="flex ml-10 mt-7 md:fixed lg:relative" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+  <ul class="nav">
+    <li class="font-medium"><a href="docs.html">Getting Started</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#overview">Overview</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#key_features">Key Features</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#prerequisites">Prerequisites</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#installation_setup">Installation/Setup</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#first_steps">First Steps</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#built_with">Built With</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#useful_links">Project Useful Links</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="folders.html">Files and Folders</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="folders.html#directory_structure">Directory Structure</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="folders.html#important_files">Important Files</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="folders.html#file_naming_conventions">File Naming Conventions</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="customization.html">Customization</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#changing_images">Changing Images</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#changing_text">Changing Text</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#changing_styles">Changing Styles (CSS)</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#customizing_components">Customizing Components</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#adding_custom_css">Adding Custom CSS</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="pages.html">Creating New Pages</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="pages.html#basic_page_template">Basic Page Template</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="pages.html#adding_to_navigation">Adding to Navigation</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="pages.html#linking_between_pages">Linking Between Pages</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="support.html">Support</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="support.html#common_issues">Common Issues</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="support.html#troubleshooting">Troubleshooting</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="support.html#contact_support">Contact Support</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="compatibility.html">Device Compatibility</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="compatibility.html#responsive_design">Responsive Design</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="compatibility.html#mobile_optimization">Mobile Optimization</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="compatibility.html#browser_compatibility">Browser Compatibility</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="faq.html">FAQ</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="faq.html#general_questions">General Questions</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="faq.html#technical_questions">Technical Questions</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="faq.html#licensing_questions">Licensing Questions</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="links.html">Important Links</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#official_documentation">Official Documentation</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#community_forums">Community Forums</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#github_repository">GitHub Repository</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#demo_site">Demo Site</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="contributing.html">Contributing</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="contributing.html#how_to_contribute">How to Contribute</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="contributing.html#code_of_conduct">Code of Conduct</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="contributing.html#submitting_issues">Submitting Issues</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="resources.html">External Resources</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#domain_register">Domain Register</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#hosting_providers">Hosting Providers</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#freelancing_platforms">Freelancing Platforms</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#freelancers">Freelancers</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#development_agencies">Development Agencies</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="legal.html">Legal</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#license_information">License Information</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#terms_of_use">Terms of Use</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#privacy_policy">Privacy Policy</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#disclaimer">Disclaimer</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <!-- Side Menu ends here -->
+
+    <div class="pl-5 md:pl-[150px] lg:pl-[150px] mainContainer">
+     <!-- Getting Started -->
+     <!-- Legal -->
+<section id="legal">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Legal</p>
+    <p class="leading-0 w-3/4">
+      This section provides important legal information regarding the use of the Moksy e-learning templates. Please read through the following documents to understand your rights and obligations.
+    </p>
+  </div>
+</section>
+
+<!-- License Information -->
+<section id="license_information">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">License Information</p>
+    <p class="leading-0 w-3/4">
+      The Moksy e-learning templates are provided under the MIT License, which allows you to use, modify, and distribute the templates freely. Below is a brief summary of the license terms:
+    </p>
+    <ul class="list-disc list-inside pt-5">
+      <li><strong>Permission:</strong> You are permitted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the templates.</li>
+      <li><strong>Conditions:</strong> The above permissions are granted provided that the copyright notice and this permission notice are included in all copies or substantial portions of the templates.</li>
+      <li><strong>Disclaimer:</strong> The templates are provided "as is", without warranty of any kind, express or implied.</li>
+    </ul>
+    <p class="pt-5 pb-4">
+      <a href="https://opensource.org/licenses/MIT" target="_blank" class="text-blue-600 underline">Read the full MIT License</a>
+    </p>
+  </div>
+</section>
+
+<!-- Terms of Use -->
+<section id="terms_of_use">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Terms of Use</p>
+    <p class="leading-0 w-3/4">
+      The Terms of Use outline the rules and regulations for using the Moksy e-learning templates. By using the templates, you agree to comply with these terms:
+    </p>
+    <ul class="list-disc list-inside pt-5">
+      <li><strong>Usage:</strong> The templates are intended for educational and professional use.</li>
+      <li><strong>Modifications:</strong> You are allowed to modify the templates to suit your needs.</li>
+      <li><strong>Prohibited Actions:</strong> You may not use the templates for unlawful purposes or distribute them without proper attribution.</li>
+    </ul>
+    <p class="pt-5 pb-4">
+      <a href="https://moksy.com/?q=terms-and-conditions" target="_blank" class="text-blue-600 underline">Read the full Terms of Use</a>
+    </p>
+  </div>
+</section>
+
+<!-- Privacy Policy -->
+<section id="privacy_policy">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Privacy Policy</p>
+    <p class="leading-0 w-3/4">
+      The Privacy Policy explains how we collect, use, and protect your personal information. By using the Moksy e-learning templates, you consent to the practices described in this policy:
+    </p>
+    <ul class="list-disc list-inside pt-5">
+      <li><strong>Information Collection:</strong> We collect information that you provide directly, such as your name and email address.</li>
+      <li><strong>Usage of Information:</strong> We use your information to improve the templates and provide support.</li>
+      <li><strong>Data Protection:</strong> We implement security measures to protect your personal information.</li>
+    </ul>
+    <p class="pt-5 pb-4">
+      <a href="https://moksy.com/?q=terms-and-conditions" target="_blank" class="text-blue-600 underline">Read the full Privacy Policy</a>
+    </p>
+  </div>
+</section>
+
+<!-- Disclaimer -->
+<section id="disclaimer">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Disclaimer</p>
+    <p class="leading-0 w-3/4">
+      The Disclaimer provides important information about the limitations of liability regarding the use of the Moksy e-learning templates:
+    </p>
+    <ul class="list-disc list-inside pt-5">
+      <li><strong>No Warranties:</strong> The templates are provided "as is", without any warranties, express or implied.</li>
+      <li><strong>Limitation of Liability:</strong> In no event shall the authors or copyright holders be liable for any claim, damages, or other liability arising from the use of the templates.</li>
+      <li><strong>Use at Your Own Risk:</strong> You use the templates at your own risk, and you are responsible for compliance with applicable laws and regulations.</li>
+    </ul>
+    <p class="pt-5 pb-4">
+      <a href="https://moksy.com/?q=terms-and-conditions" target="_blank" class="text-blue-600 underline">Read the full Disclaimer</a>
+    </p>
+  </div>
+</section>
+
+    
+
+    </div>
+  </div>
+  <!-- Footer starts here -->
+  <footer style="margin-top: auto;">
+    <div class="dark:bg-white bg-slate-900 h-38 py-1 px-1 mt-5">
+      <div tabindex="0" aria-label="footer" class="focus:outline-none mx-auto container flex flex-col items-center justify-center">
+        <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+          <div class="my-6 text-base text-color f-f-l">
+            <ul class="md:flex items-center">
+              <li class="cursor-pointer pt-4 lg:py-0">
+                <a href="./index.html" class="text-white dark:text-black focus:outline-none focus:underline hover:text-gray-200">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm text-color mb-10 f-f-l">
+            <p tabindex="0" class="text-white dark:text-white focus:outline-none">
+              &copy; <span id="currentYear"></span> Prova. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+</body>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
+</script>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Change the description wrt project -->
+  <!-- Meta tags -->
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="web">
+<meta name="copyright" content="Everything you need to run your e-learning platform.">
+<meta name='language' content='English'>
+<meta name="author" content="Adam Levine"> 
+
+<!-- Canonical link -->
+<link rel="canonical" href="https://moksy.com"/>
+
+<!-- Designer and publisher info -->
+<meta name="designer" content="GGLink">
+<meta name="publisher" content="Adam Levine">
+
+<!-- Twitter Cards  -->
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Everything you need to run your e-learning platform."/>
+<meta property="twitter:description" content="Are you looking for an e-learning software solution to start your education business for asset and investment management courses? Then you can try harro. With our e-learning platform, you can manage every aspect of your education in one place."/>
+<meta property="twitter:locale" content="English"/>
+<meta property="twitter:image" content="https://moksy.com/templates/prova/assets/images/branding/logo.png"/>
+<meta property="twitter:url" content="https://moksy.com"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Everything you need to run your e-learning platform."/>
+<meta property="og:description" content="Are you looking for an e-learning software solution to start your education business for asset and investment management courses? Then you can try harro. With our e-learning platform, you can manage every aspect of your education in one place."/>
+<meta property="og:locale" content="English"/>   
+<meta property="og:image" content="https://moksy.com/templates/prova/assets/images/branding/logo.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:url" content="https://moksy.com"/>
+<meta property="og:site_name" content="harro">
+<meta property="fb:app_id" content=""/>
+
+<!--favicons -->
+<link rel="icon" sizes="16x16" type="image/png" href="https://moksy.com/templates/prova/assets/images/branding/favicon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- You can add your own fonts from fonts.google.com -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Default Script tags -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/js/index.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+<link rel="stylesheet" href="./assets/styles/style.css">
+  <!-- Replace the title name -->
+  <title>Prova- Document Template</title>
+</head>
+
+<!-- Change the font-family to our choice -->
+
+<body style="font-family: 'Poppins', sans-serif; min-height: 100vh; display: flex; flex-direction: column;"
+  class="dark:bg-slate-900 bg-white dark:text-white">
+  <!-- Header start here -->
+  <header class="w-full p-3 border-b dark:border-b  flex sticky top-0 z-10 dark:bg-slate-900 bg-white dark:text-white ">
+    <nav
+      class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white">
+      <ul>
+        <!-- You can change your logo name -->
+        <li class="font-mono text-xl">
+          <a href="./index.html">
+          <img src="https://moksy.com/templates/prova/assets/images/branding/logo.png" alt="Prova"  class="mainlogo" style="width: 50px; height: 50px; border-radius: 50%;" />
+          </a>
+        </li>
+      </ul>
+      <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+        <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+          <a href="./docs.html">Documentation</a>
+        </li>
+        <div>
+          <ul class="flex">
+
+            <li class="mr-5 flex dark:flex">
+              <a href="https://moksy.com/templates/prova" target="_blank"><img src="./assets/svgs/website.svg" width="20px"  alt="Live site" /></a>
+            </li>
+            
+            <li class="mr-5 flex dark:flex">
+              <a href="https://github.com/moksy-Lab/" target="_blank"><img src="./assets/svgs/github.svg" alt="GitHub Link" /></a>
+            </li>
+            
+            <li class="mr-5 flex dark:flex">
+              <a href="https://www.youtube.com/@moksy9311" target="_blank"><img src="./assets/svgs/youtube.svg" alt="Youtube " /></a>
+            </li>
+            <li class="mr-5  flex dark:flex">
+              <a href="https://www.facebook.com/moksyuk" target="_blank"><img src="./assets/svgs/facebook.svg"  width="20px" alt="Facebook" /></a>
+            </li>
+           
+          </ul>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+  </header>
+
+  <!-- Header ends here -->
+
+  <!-- Documentation Title and Description start here -->
+  <div class="bg-gradient-to-b from-[#0066ff] to-[#302d61] p-6 md:p-10">
+    <div class="w-full items-center flex justify-center flex-col">
+      <p class="text-3xl text-black">Documentation</p>
+      <!-- Change Description as per your information -->
+      <p class="font-sans text-black text-center w-[300px] lg:w-[700px] md:w-[700px] sm:w-[600px] mt-4">
+        Are you looking for an e-learning software solution to start your education business for asset and investment management courses? Then you can try prova. With our e-learning platform, you can manage every aspect of your education in one place.
+      </p>
+    </div>
+    <div class="w-full flex justify-center py-3 md:py-5 flex-col items-center">
+      <p class="py-4 text-xl text-black">Getting started is easy!</p>
+      <a href="./docs.html"
+        class="h-50 bg-white p-2 w-40 rounded-full text-center drop-shadow-2xl transition-all hover:bg-purple-900 text-black hover:text-white hover:ease-in-out">
+        Get Started
+      </a>
+    </div>
+    <div>
+      <img class="my-4 md:my-6 w-11/12 md:w-3/4 lg:w-3/5 xl:w-7/12 2xl:w-1/2 mx-auto drop-shadow-2xl"
+        src="https://moksy.com/templates/prova/assets/images/branding/prova-feature-one.png" alt="Are you looking for an e-learning software solution to start your education business for asset and investment management courses? Then you can try prova. With our e-learning platform, you can manage every aspect of your education in one place." />
+
+         <img class="my-4 md:my-6 w-11/12 md:w-3/4 lg:w-3/5 xl:w-7/12 2xl:w-1/2 mx-auto drop-shadow-2xl"
+        src="https://moksy.com/templates/prova/assets/images/branding/prova-feature-two.png" alt="Are you looking for an e-learning software solution to start your education business for asset and investment management courses? Then you can try prova. With our e-learning platform, you can manage every aspect of your education in one place." />
+
+         <img class="my-4 md:my-6 w-11/12 md:w-3/4 lg:w-3/5 xl:w-7/12 2xl:w-1/2 mx-auto drop-shadow-2xl"
+        src="https://moksy.com/templates/prova/assets/images/branding/prova-feature-three.png" alt="Are you looking for an e-learning software solution to start your education business for asset and investment management courses? Then you can try prova. With our e-learning platform, you can manage every aspect of your education in one place." />
+    </div>
+  </div>
+  <!-- Document title and description ends here -->
+
+
+  <!-- Documentation Cards starts here -->
+  <div class="w-full flex justify-center items-center mt-20 mb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div
+        class="cursor-pointer transition-transform transform hover:scale-105 hover:rotate-2 rounded-[25px] transition-all duration-300 ease-in-out max-w-sm rounded shadow bg-white bg-gradient-to-br from-[#302b63] to-[#2c3e50] block -inset-1 -skew-y-3 relative inline-block before:block before:absolute before:-inset-1 before:bg-[#F27121] before:h-2 before:mx-2 before:rounded">
+        <div class="flex">
+          <div class="px-6 py-5">
+            <p tabindex="0" class="focus:outline-none text-base font-medium leading-none text-white flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
+              Installation/Setup
+            </p>
+            <p tabindex="0" class="focus:outline-none text-base leading-2 text-gray-300 dark:text-gray-400 pt-2">
+             Our comprehensive installation guide ensures a smooth setup process. Whether you’re deploying on-premises or in the cloud, follow our step-by-step instructions to get your system up and running quickly. The guide covers everything from initial configuration to advanced setup options, ensuring that even those new to the platform can get started with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card 2 -->
+      <div
+        class="cursor-pointer transition-transform transform hover:scale-105 hover:rotate-2 rounded-[25px] transition-all duration-300 ease-in-out max-w-sm rounded shadow bg-white bg-gradient-to-br from-[#302b63] to-[#2c3e50] block -inset-1 -skew-y-3 relative inline-block before:block before:absolute before:-inset-1 before:bg-pink-500 before:h-2 before:mx-2 before:rounded">
+        <div class="flex">
+          <div class="px-6 py-5">
+            <p tabindex="0" class="focus:outline-none text-base font-medium leading-none text-white flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                  clip-rule="evenodd" />
+              </svg>
+              Customisation
+            </p>
+            <p tabindex="0" class="focus:outline-none text-base leading-2 text-gray-300 dark:text-gray-400 pt-2">
+              Tailor the system to meet your specific needs with our robust customisation options. From user interface adjustments to integrating third-party applications, our documentation provides detailed instructions on how to modify the platform to suit your unique requirements. Create a personalised experience that aligns perfectly with your business processes and enhances productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="cursor-pointer transition-transform transform hover:scale-105 hover:rotate-2 rounded-[25px] transition-all duration-300 ease-in-out max-w-sm rounded shadow bg-white bg-gradient-to-br from-[#302b63] to-[#2c3e50] block -inset-1 -skew-y-3 relative inline-block before:block before:absolute before:-inset-1 before:bg-[#F27121] before:h-2 before:mx-2 before:rounded">
+        <div class="flex">
+          <div class="px-6 py-5">
+            <p tabindex="0" class="focus:outline-none text-base font-medium leading-none text-white flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd" />
+              </svg>
+              Support
+            </p>
+            <p tabindex="0" class="focus:outline-none text-base leading-2 text-gray-300 dark:text-gray-400 pt-2">
+              Our dedicated support team is here to assist you every step of the way. For a minimal fee, you can access our extensive knowledge base, community forums, and direct support channels to resolve any issues you encounter. We are committed to providing timely and effective solutions, ensuring that you can maintain optimal performance and achieve your business goals with confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Documentation Cards ends here -->
+
+
+  <!-- Contribution section ends here -->
+    <section id="contributors">
+    <!-- Replace background image as per your choice -->
+    <div class="container mx-auto m-5 bg-gradient-to-r from-[#009FFF] to-[#ec2F4B] rounded-md">
+      <div class="flex flex-col justify-center items-center py-12 mx-4 md:mx-6">
+        <div class="lg:w-1/2 flex flex-col justify-center items-center mb-10">
+          <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-center text-white">
+            Meet our Contributors
+          </h1>
+          <p class="text-white">Our contributors is composed of dedicated professionals who are passionate about delivering exceptional service and innovative solutions. With diverse expertise across various fields, we work collaboratively to ensure that your experience with us is seamless and successful. Get to know the talented individuals driving our mission to support and enhance your business.</p>
+          <a href="https://github.com/Moksy-Lab/prova/graphs/contributors" target="_blank"   class="h-50 bg-white p-2 w-40 rounded-full text-center drop-shadow-2xl transition-all hover:bg-purple-900 text-black hover:text-white hover:ease-in-out">Start Contributing </a>
+        </div>
+        <div role="list" aria-label="Team members" class="grid grid-flow-row md:grid-flow-col gap-10">
+          <!-- Replace href and src link -->
+          <div role="listitem" class="relative flex justify-center items-center">
+            <a href="https://github.com/moktermd08" target="_blank">
+              <div class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md">
+                <img src="./assets/svgs/github.svg" class="absolute top-16 h-6 w-6" alt="github.img" />
+                <!-- add github username under title -->
+                <img src="https://avatars.githubusercontent.com/u/55099505?v=4"
+                  class="absolute w-20 h-20 -top-8 rounded-full" alt="display avatar" role="img" title="Mokter Hossain" />
+                <!-- Enter your github username -->
+                <p class="absolute top-24 text-center text-black">@moktermd08</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Shrikant Dhayje Contribution -->
+          <div role="listitem" class="relative flex justify-center items-center">
+            <a href="https://github.com/ray66han/" target="_blank">
+              <div class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md">
+                <img src="./assets/svgs/github.svg" class="absolute top-16 h-6 w-6" alt="github.img" />
+                <!-- add github username under title -->
+                <img src="https://avatars.githubusercontent.com/u/86953449?v=4"
+                  class="absolute w-20 h-20 -top-8 rounded-full" alt="display avatar" role="img" title="Rayan Bijoy" />
+                <!-- Enter your github username -->
+                <p class="absolute top-24 text-center text-black">@ray66han</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Tamion Contribution -->
+          <div role="list" aria-label="Team members" class="grid grid-flow-row md:grid-flow-col gap-10">
+            <!-- Replace href and src link -->
+            <div role="listitem" class="relative flex justify-center items-center">
+              <a href="https://github.com/627md-Tajul-Islam" target="_blank">
+                <div class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md">
+                  <img src="./assets/svgs/github.svg" class="absolute top-16 h-6 w-6" alt="github.img" />
+                  <!-- add github username under title -->
+                  <img src="https://avatars.githubusercontent.com/u/76746616?v=4"
+                    class="absolute w-20 h-20 -top-8 rounded-full" alt="display avatar" role="img" title="Tajul Islam" />
+                  <!-- Enter your github username -->
+                  <p class="absolute top-24 text-center text-black">@mr-Tajul-Islam</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Nereida Contribution -->
+          <div role="list" aria-label="Team members" class="grid grid-flow-row md:grid-flow-col gap-10">
+            <!-- Replace href and src link -->
+            <div role="listitem" class="relative flex justify-center items-center">
+              <a href="https://github.com/soniasab07" target="_blank">
+                <div class="relative h-40 bg-white hover:drop-shadow-2xl w-48 flex justify-center rounded-md">
+                  <img src="./assets/svgs/github.svg" class="absolute top-16 h-6 w-6" alt="github.img" />
+                  <!-- add github username under title -->
+                  <img src="https://avatars.githubusercontent.com/u/175214632?v=4"
+                    class="absolute w-20 h-20 -top-8 rounded-full" alt="display avatar" role="img" title="Sonia Sabherwal" />
+                  <!-- Enter your github username -->
+                  <p class="absolute top-24 text-center text-black">@soniasab07</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </section>
+  <!-- Contribution section ends here -->
+
+  <!-- Footer starts here -->
+  <footer style="margin-top: auto;">
+    <div class="bg-white dark:bg-slate-900 h-38 py-1 px-1 mt-5">
+      <div tabindex="0" aria-label="footer"
+        class="focus:outline-none mx-auto container flex flex-col items-center justify-center">
+        <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+          <div class="my-6 text-base text-color f-f-l">
+            <ul class="md:flex items-center">
+              <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                <a href="./docs.html"
+                  class="text-black dark:text-white focus:outline-none focus:underline hover:text-gray-200">Documentation
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="text-sm text-color mb-10 f-f-l">
+            <!-- Rename cleandocs with your respective name -->
+            <p tabindex="0" class="text-black dark:text-white focus:outline-none">
+              &copy; <span id="currentYear"></span> Prova. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+</body>
+  <script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
+</script>
+</html>

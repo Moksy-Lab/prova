@@ -1,0 +1,23 @@
+# robots.txt for prova
+
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+# Sitemap location
+Sitemap: https://moksy.com/templates/prova//sitemap.xml
+
+# Host
+Host: https://moksy.com/templates/prova/
+
+# Support Contact
+Contact: support@moksy.com
+
+# Additional information
+# Site Name: prova
+# Site Description: 
+# Site Version: 1.0.0
+# Year: 2024
+
+# All rights reserved 2024 by Prova

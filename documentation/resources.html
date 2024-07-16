@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="https://moksy.com/templates/prova/assets/images/branding/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta tags -->
+  <meta name="robots" content="index,follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="distribution" content="web">
+  <meta name="copyright" content="Free Professional e-Learning Templates.">
+  <meta name='language' content='English'>
+  <meta name="author" content="Adam Levine"> 
+
+  <!-- Canonical link -->
+  <link rel="canonical" href="https://moksy.com"/>
+
+  <!-- Designer and publisher info -->
+  <meta name="designer" content="GGLink">
+  <meta name="publisher" content="Adam Levine">
+
+  <!-- Twitter Cards  -->
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Free Professional e-Learning Templates"/>
+  <meta property="twitter:description" content="Explore our responsive, reusable, and well-documented e-learning templates built on top of Bootstrap."/>
+  <meta property="twitter:locale" content="English"/>
+  <meta property="twitter:image" content="https://moksy.com/templates/prova/assets/images/branding/logo.png"/>
+  <meta property="twitter:url" content="https://moksy.com"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Free Professional e-Learning Templates"/>
+  <meta property="og:description" content="Explore our responsive, reusable, and well-documented e-learning templates built on top of Bootstrap."/>
+  <meta property="og:locale" content="English"/>   
+  <meta property="og:image" content="https://moksy.com/templates/prova/assets/images/branding/logo.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url" content="https://moksy.com"/>
+  <meta property="og:site_name" content="harro">
+  <meta property="fb:app_id" content=""/>
+
+  <!--favicons -->
+  <link rel="icon" sizes="16x16" type="image/png" href="https://moksy.com/templates/prova/assets/images/branding/favicon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Default Script tags -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/js/index.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
+/>
+
+<link rel="stylesheet" href="./assets/styles/style.css">
+<script> hljs.addPlugin(new CopyButtonPlugin());</script>
+
+  <!-- Replace the title name -->
+  <title>Prova - Documentation</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif; min-height: 100vh; display: flex; flex-direction: column;" class="dark:bg-slate-900 bg-white dark:text-white">
+  <!-- Header start here -->
+  <header class="w-full p-3 border-b dark:border-b  flex sticky top-0 z-10 dark:bg-slate-900 bg-white dark:text-white ">
+    <nav class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white">
+      <ul>
+        <li class="font-mono text-xl">
+          <a href="./index.html">
+            <img src="https://moksy.com/templates/prova/assets/images/branding/logo.png" alt="Prova"  class="mainlogo" style="width: 50px; height: 50px; border-radius: 50%;" />
+          </a>
+        </li>
+      </ul>
+      <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+        <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+          <a href="./docs.html">Documentation</a>
+        </li>
+        <div>
+          <ul class="flex">
+            <li class="mr-5 flex dark:flex">
+              <a href="https://moksy.com/templates/prova" target="_blank"><img src="./assets/svgs/website.svg" width="20px" alt="Live site" /></a>
+            </li>
+            <li class="mr-5 flex dark:flex">
+              <a href="https://github.com/moksy-Lab/" target="_blank"><img src="./assets/svgs/github.svg" alt="GitHub Link" /></a>
+            </li>
+            <li class="mr-5 flex dark:flex">
+              <a href="https://www.youtube.com/@moksy9311" target="_blank"><img src="./assets/svgs/youtube.svg" alt="Youtube " /></a>
+            </li>
+            <li class="mr-5 flex dark:flex">
+              <a href="https://www.facebook.com/moksyuk" target="_blank"><img src="./assets/svgs/facebook.svg" width="20px" alt="Facebook" /></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+    <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+  </header>
+  <!-- Header ends here -->
+
+  <div class="flex flex-col md:flex-row lg:flex-row">
+    <!-- Side menu starts here -->
+    <nav class="flex ml-10 mt-7 md:fixed lg:relative" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+  <ul class="nav">
+    <li class="font-medium"><a href="docs.html">Getting Started</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#overview">Overview</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#key_features">Key Features</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#prerequisites">Prerequisites</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#installation_setup">Installation/Setup</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#first_steps">First Steps</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#built_with">Built With</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="docs.html#useful_links">Project Useful Links</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="folders.html">Files and Folders</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="folders.html#directory_structure">Directory Structure</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="folders.html#important_files">Important Files</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="folders.html#file_naming_conventions">File Naming Conventions</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="customization.html">Customization</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#changing_images">Changing Images</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#changing_text">Changing Text</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#changing_styles">Changing Styles (CSS)</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#customizing_components">Customizing Components</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="customization.html#adding_custom_css">Adding Custom CSS</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="pages.html">Creating New Pages</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="pages.html#basic_page_template">Basic Page Template</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="pages.html#adding_to_navigation">Adding to Navigation</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="pages.html#linking_between_pages">Linking Between Pages</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="support.html">Support</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="support.html#common_issues">Common Issues</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="support.html#troubleshooting">Troubleshooting</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="support.html#contact_support">Contact Support</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="compatibility.html">Device Compatibility</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="compatibility.html#responsive_design">Responsive Design</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="compatibility.html#mobile_optimization">Mobile Optimization</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="compatibility.html#browser_compatibility">Browser Compatibility</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="faq.html">FAQ</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="faq.html#general_questions">General Questions</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="faq.html#technical_questions">Technical Questions</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="faq.html#licensing_questions">Licensing Questions</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="links.html">Important Links</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#official_documentation">Official Documentation</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#community_forums">Community Forums</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#github_repository">GitHub Repository</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="links.html#demo_site">Demo Site</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="contributing.html">Contributing</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="contributing.html#how_to_contribute">How to Contribute</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="contributing.html#code_of_conduct">Code of Conduct</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="contributing.html#submitting_issues">Submitting Issues</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="resources.html">External Resources</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#domain_register">Domain Register</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#hosting_providers">Hosting Providers</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#freelancing_platforms">Freelancing Platforms</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#freelancers">Freelancers</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="resources.html#development_agencies">Development Agencies</a></li>
+      </ul>
+    </li>
+    <li class="font-medium"><a href="legal.html">Legal</a>
+      <ul class="nav">
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#license_information">License Information</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#terms_of_use">Terms of Use</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#privacy_policy">Privacy Policy</a></li>
+        <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"><a href="legal.html#disclaimer">Disclaimer</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <!-- Side Menu ends here -->
+
+    <div class="pl-5 md:pl-[150px] lg:pl-[150px] mainContainer">
+     <!-- Getting Started -->
+     <!-- External Resources -->
+<section id="external_resources">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">External Resources</p>
+    <p class="leading-0 w-3/4">
+      This section provides a curated list of external resources that can help you with various aspects of using and customizing the Moksy e-learning templates. These resources include domain registrars, hosting providers, freelancing platforms, freelancers, and development agencies.
+    </p>
+  </div>
+</section>
+
+<!-- Domain Register -->
+<section id="domain_register">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Domain Register</p>
+    <div class="pt-5">
+      
+      <ul class="list-disc list-inside">
+  <li>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/GoDaddy_logo.svg" alt="GoDaddy" class="inline-block w-6 h-6 mr-2"> <strong>GoDaddy:</strong> One of the largest and most affordable domain registrars.
+  </li>
+  <li>
+    <img src="https://cdn.svgporn.com/logos/namecheap.svg" alt="Namecheap" class="inline-block w-6 h-6 mr-2"> <strong>Namecheap:</strong> Offers competitive pricing and excellent customer service.
+  </li>
+  <li>
+    <img src="https://www.bluehost.com/content/experience-fragments/bluehost/site-header/master/jcr%3acontent/root/header/logo.coreimg.svg/1685605417392/bluehost-logo.svg" alt="Bluehost" class="inline-block w-6 h-6 mr-2"> <strong>Bluehost:</strong> Provides domain registration and hosting services with 24/7 support.
+  </li>
+  <li>
+    <img src="https://cdn.svgporn.com/logos/google-domains-icon.svg" alt="Google Domains" class="inline-block w-6 h-6 mr-2"> <strong>Google Domains:</strong> Simplifies domain management with transparent pricing.
+  </li>
+  <li>
+    <img src="https://cdn.svgporn.com/logos/dreamhost.svg" alt="DreamHost" class="inline-block w-6 h-6 mr-2"> <strong>DreamHost:</strong> Known for reliable services and user-friendly interfaces.
+  </li>
+  <li>
+    <img src="https://cdn.svgporn.com/logos/hostgator-icon.svg" alt="HostGator" class="inline-block w-6 h-6 mr-2"> <strong>HostGator:</strong> Offers affordable domain registration and hosting packages.
+  </li>
+  <li>
+    <img src="https://www.dynadot.com/tr/mainsite2023/navbar-logo-dark-2023.png" alt="Dynadot" class="inline-block w-6 h-6 mr-2"> <strong>Dynadot:</strong> Provides advanced domain management tools.
+  </li>
+  <li>
+    <img src="https://www.hostinger.co.uk/h-assets/svg/icons/logos/hostinger-logo.svg" alt="A2 Hosting" class="inline-block w-6 h-6 mr-2"> <strong>A2 Hosting:</strong> Known for speed and performance in domain registration and hosting.
+  </li>
+  <li>
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/SiteGround.Com_Inc._Logo.png" alt="SiteGround" class="inline-block w-6 h-6 mr-2"> <strong>SiteGround:</strong> Offers excellent support and domain registration services.
+  </li>
+  <li>
+    <img src="https://design.inmotionhosting.com/assets/logos/corporate/logo-imh.svg" alt="InMotion Hosting" class="inline-block w-6 h-6 mr-2"> <strong>InMotion Hosting:</strong> Provides business-class domain registration and hosting services.
+  </li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hosting Providers -->
+<section id="hosting_providers">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Hosting Providers</p>
+    <div class="pt-5">
+     <ul class="list-disc list-inside">
+  <li>
+    <a href="https://aws.amazon.com/" target="_blank">
+      <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" class="inline-block w-6 h-6 mr-2"> <strong>AWS:</strong> Amazon Web Services offers scalable and reliable hosting solutions.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.digitalocean.com/" target="_blank">
+      <img src="https://cdn.svgporn.com/logos/digital-ocean-icon.svg" alt="DigitalOcean" class="inline-block w-6 h-6 mr-2"> <strong>DigitalOcean:</strong> Provides cloud hosting with simplicity and developer-friendly tools.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.vultr.com/" target="_blank">
+      <img src="https://cdn.svgporn.com/logos/vultr-icon.svg" alt="Vultr" class="inline-block w-6 h-6 mr-2"> <strong>Vultr:</strong> Offers high-performance SSD cloud servers.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.bluehost.com/" target="_blank">
+      <img src="https://www.bluehost.com/content/experience-fragments/bluehost/site-header/master/jcr%3acontent/root/header/logo.coreimg.svg/1685605417392/bluehost-logo.svg" alt="Bluehost" class="inline-block w-6 h-6 mr-2"> <strong>Bluehost:</strong> Reliable hosting services with 24/7 customer support.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.hostgator.com/" target="_blank">
+      <img src="https://cdn.svgporn.com/logos/hostgator-icon.svg" alt="HostGator" class="inline-block w-6 h-6 mr-2"> <strong>HostGator:</strong> Affordable and reliable hosting solutions.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.siteground.com/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/SiteGround.Com_Inc._Logo.png" alt="SiteGround" class="inline-block w-6 h-6 mr-2"> <strong>SiteGround:</strong> Known for excellent support and performance.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.inmotionhosting.com/" target="_blank">
+      <img src="https://design.inmotionhosting.com/assets/logos/corporate/logo-imh.svg" alt="InMotion Hosting" class="inline-block w-6 h-6 mr-2"> <strong>InMotion Hosting:</strong> Provides business-class hosting solutions.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.dreamhost.com/" target="_blank">
+      <img src="https://cdn.svgporn.com/logos/dreamhost.svg" alt="DreamHost" class="inline-block w-6 h-6 mr-2"> <strong>DreamHost:</strong> Reliable hosting services with a focus on privacy.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linode.com/" target="_blank">
+      <img src="https://cdn.svgporn.com/logos/linode.svg" alt="Linode" class="inline-block w-6 h-6 mr-2"> <strong>Linode:</strong> Developer-friendly cloud hosting with powerful tools.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.a2hosting.com/" target="_blank">
+      <img src="https://www.isitwp.com/wp-content/uploads/2018/05/A2-Hosting-logo.png" alt="A2 Hosting" class="inline-block w-6 h-6 mr-2"> <strong>A2 Hosting:</strong> Known for speed and performance.
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Freelancing Platforms -->
+<section id="freelancing_platforms">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Freelancing Platforms</p>
+    <div class="pt-5">
+      <ul class="list-disc list-inside">
+  <li>
+    <a href="https://www.upwork.com/" target="_blank">
+      <img src="https://cdn.svgporn.com/logos/upwork.svg" alt="Upwork" class="inline-block w-6 h-6 mr-2"> <strong>Upwork:</strong> A leading freelancing platform connecting clients with freelancers.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.fiverr.com/" target="_blank">
+      <img src="https://stockimg.ai/_next/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FAbdurrahman-Subh%2Fmdx-blog%2Fmain%2Fimages%2Flogo-fiverr.png&w=1920&q=75" alt="Fiverr" class="inline-block w-6 h-6 mr-2"> <strong>Fiverr:</strong> Offers a wide range of freelance services starting at $5.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.freelancer.com/" target="_blank">
+      <img src="https://pbs.twimg.com/profile_images/771214542231568387/UHj3IdCU_400x400.jpg" alt="Freelancer" class="inline-block w-6 h-6 mr-2"> <strong>Freelancer:</strong> Connects employers with freelancers for various projects.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.toptal.com/" target="_blank">
+      <img src="https://www.toptal.com/toptal-logo.png" alt="Toptal" class="inline-block w-6 h-6 mr-2"> <strong>Toptal:</strong> Provides top freelance talent for your project needs.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.guru.com/" target="_blank">
+      <img src="https://www.valuecoders.com/blog/wp-content/uploads/2015/12/guru-logo.png" alt="Guru" class="inline-block w-6 h-6 mr-2"> <strong>Guru:</strong> Offers a platform for finding and hiring expert freelancers.
+    </a>
+  </li>
+  <li>
+    <a href="https://www.peopleperhour.com/" target="_blank">
+      <img src="https://pbs.twimg.com/profile_images/1039867729090633728/_kLkBl4l_400x400.jpg" alt="PeoplePerHour" class="inline-block w-6 h-6 mr-2"> <strong>PeoplePerHour:</strong> Connects clients with freelance professionals.
+    </a>
+  </li>
+  
+</ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Freelancers -->
+<section id="freelancers">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Freelancers</p>
+    <div class="pt-5">
+      <ul class="list-disc list-inside">
+  <li>
+    <a href="https://www.upwork.com/en-gb/freelancers/~01f2f12d2a6abfbe9e" target="_blank">
+      <img src="https://www.upwork.com/profile-portraits/c1s9lOLiRdVXD3D1UeZE55ZjWQBLN_PTAeOapk9kNvQrLkHQEhPvDesaXqnmf10cnS" alt="Freelancer1" class="inline-block w-6 h-6 mr-2"> <strong>Mokter Hossain:</strong> Expert in web development and design.
+    </a>
+  </li>
+  
+</ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- Development Agencies -->
+<section id="development_agencies">
+  <div class="h-full mt-10">
+    <p class="font-normal text-2xl">Development Agencies</p>
+    <div class="pt-5">
+      <ul class="list-disc list-inside">
+  <li>
+    <a href="https://www.gglink.uk/" target="_blank">
+      <img src="https://www.gglink.uk/assets/images/branding/logo/gg-logo.png" alt="GGLink" class="inline-block w-6 h-6 mr-2"> <strong>GGLink:</strong> Full-service development agency offering web and mobile solutions.
+    </a>
+  </li>
+  
+</ul>
+
+    </div>
+  </div>
+</section>
+
+    
+
+    </div>
+  </div>
+  <!-- Footer starts here -->
+  <footer style="margin-top: auto;">
+    <div class="dark:bg-white bg-slate-900 h-38 py-1 px-1 mt-5">
+      <div tabindex="0" aria-label="footer" class="focus:outline-none mx-auto container flex flex-col items-center justify-center">
+        <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+          <div class="my-6 text-base text-color f-f-l">
+            <ul class="md:flex items-center">
+              <li class="cursor-pointer pt-4 lg:py-0">
+                <a href="./index.html" class="text-white dark:text-black focus:outline-none focus:underline hover:text-gray-200">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm text-color mb-10 f-f-l">
+            <p tabindex="0" class="text-white dark:text-white focus:outline-none">
+              &copy; <span id="currentYear"></span> Prova. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+</body>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
+</script>
+</html>

@@ -1,0 +1,116 @@
+{
+    "name": "prova_CAPITAL",
+    "description": "",
+    "short_name": "prova",
+    "start_url": "https://moksy.com/templates/prova",
+    "display": "standalone",
+    "background_color": "#f69435",
+    "theme_color": "#ff914f",
+    "orientation": "portrait",
+    "scope": "/",
+    "lang": "en",
+    "dir": "ltr",
+    "icons": [
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "36x36",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/branding/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "screenshots": [
+        {
+            "src": "https://moksy.com/templates/prova/assets/images/branding/prova-feature-one.png",
+            "sizes": "640x480",
+            "type": "image/png"
+        },
+        {
+            "src": "https://moksy.com/templates/prova/assets/images/branding/prova-feature-two.png",
+            "sizes": "640x480",
+            "type": "image/png"
+        },
+        {
+            "src": "https://moksy.com/templates/prova/assets/images/branding/prova-feature-three.png",
+            "sizes": "640x480",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Home",
+            "short_name": "Home",
+            "description": "Go to home page",
+            "url": "/index.html",
+            "icons": [
+                {
+                    "src": "/assets/images/branding/logo.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "short_name": "Contact",
+            "description": "Go to contact page",
+            "url": "/index.html",
+            "icons": [
+                {
+                    "src": "/assets/images/branding/logo.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}

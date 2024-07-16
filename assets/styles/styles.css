@@ -1,0 +1,490 @@
+/*****rootCSSRules*****/
+    :root {
+--brand-color: #ff914f;
+--light-brand-color: #add8e6;
+--text-color: #7C7C7C;
+--light-text-color: #f5f5f5;
+--alert-color: #0099FF;
+--success-color: #00AA55;
+--warning-color: #EE8800;
+--error-color: #EA0000;
+--black-color: #343434;
+--main-background-color: #f8f9fa;
+--light-background-color: #fbfbfb;
+--default-font: Poppins;
+--primary-font: Teko;
+--secondary-font: Poppins;
+--thirdprimary-font: Teko;
+}
+/*****rootCSSRules*****/
+
+/*****TypographyCSS*****/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  scroll-behavior: smooth;}
+
+@-ms-viewport {
+  width: device-width; }
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: #353935; }
+/* no margin for header and footer section */
+section.footer, section.header  {
+    margin: 0; 
+}
+/* 20px top and bottom margin for all sections */
+section {
+    margin: 20px 0; 
+    display: block;
+    width: 100%;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+ }
+
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+h1, .h1 {
+  font-size: 2.75rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.125rem; }
+
+h4, .h4 {
+  font-size: 1rem; }
+
+h5, .h5 {
+  font-size: 0.875rem; }
+
+h6, .h6 {
+  font-size: 0.813rem; }
+
+.lead {
+  font-size: 1.4rem;
+  font-weight: 400; }
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+/*****TypographyCSS*****/
+
+/*****harshall*****/
+/* #harshall(harshallHeader) #css starts  */
+.harshallHeader .logo{
+    max-height: 50px
+}
+.harshallHeader .navbar-open-icon {
+    display: inline
+}
+.harshallHeader .navbar-close-icon {
+    display: none
+}
+.harshallHeader .navbar-toggler[aria-expanded="true"] .navbar-open-icon {
+    display: none
+}
+.harshallHeader .navbar-toggler[aria-expanded="true"] .navbar-close-icon {
+    display: inline
+}
+.harshallHeader .navbar-light .navbar-toggler{
+    color: #353935;
+    border-color: #353935;
+    font-size: 25px;
+}
+/* #harshall(harshallHeader) #css ends  */
+/*****harshall*****/
+
+/*****babak*****/
+    /* #babak(babakBanner) #css starts  */
+    .babakBanner .BG {
+        background-image: url(https://images.moksy.com/templates/default/banner/online-learning-two.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        border-radius: 50px
+    }
+
+    .babakBanner .btn {   
+        padding: 15px;
+        background-color: #353935;
+        border-radius: 10px
+    }
+    .babakBanner .fa{
+        color: #fff;
+    }
+
+    .babakBanner a {
+        text-decoration: none;
+        color: #fff
+    }
+
+    .babakBanner a:hover {
+        color: #fff
+    }
+    /* #babak(babakBanner) #css ends  */
+/*****babak*****/
+
+/*****cjaime*****/
+    /* #cjaime(cjaimeCTA) #css starts  */
+    .cjaimeCTA .fdb-block {
+        padding: 7.5rem 0
+    }
+    .cjaimeCTA .btn{
+        color: #fff;
+        border-color: #353935;
+        background-color: #353935;
+    }
+    /* #cjaime(cjaimeCTA) #css ends  */
+/*****cjaime*****/
+
+/*****foster*****/
+/* #foster(fosterFeature) #css starts */
+.fosterFeature .fdb-block {
+    padding: 7.5rem 0
+ }
+
+ .fosterFeature  .fdb-block img.fdb-icon {
+      width: auto;
+      width: 3.75rem
+    }
+/* #foster(fosterFeature) #css starts */
+/*****foster*****/
+
+/*****ted*****/
+    /* #ted(tedTestimonial) #css starts  */
+    .tedTestimonial .logo{
+        max-width: 50px
+    }
+    @media (min-width: 1200px) {
+        .tedTestimonial .pb-xl-5, 
+        .tedTestimonial .py-xl-5 {
+            padding-bottom: 0rem !important;
+        }
+    }
+    @media (min-width: 1200px) {
+        .tedTestimonial .mt-xl-5, 
+        .tedTestimonial .my-xl-5 {
+            margin-top: 2rem !important;
+        }
+    }
+    /* #ted(tedTestimonial) #css ends  */
+/*****ted*****/
+
+/*****cactus*****/ 
+    /* #cactus(cactusClients) #css starts  */
+    .cactusClients #clients .clients-wrap {
+        margin-bottom: 20px
+    }
+
+    .cactusClients img {
+        max-height: 200px;
+        max-width: 200px
+    }
+
+    .cactusClients #clients .client-logo {
+        padding: 60px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow: hidden;
+        height: 100px
+    }
+    /* #cactus(cactusClients) #css ends  */
+/*****cactus*****/
+
+/*****funny*****/
+/* #funny(funnyFooter) #css starts */
+.funnyFooter {
+    min-height: 40vh
+}
+
+.funnyFooter a,
+.funnyFooter a:hover,
+.funnyFooter a:focus,
+.funnyFooter a:active {
+    text-decoration: none;
+    outline: none
+}
+
+.funnyFooter a,
+.funnyFooter a:active,
+.funnyFooter a:focus {
+    color: #fff;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s
+}
+
+.funnyFooter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.funnyFooter img {
+    max-width: 100%;
+    height: auto
+}
+
+.funnyFooter .footer-section {
+    background-color: #233243;
+    position: relative;
+    overflow: hidden;
+    z-index: 9
+}
+
+.funnyFooter .footer-section:before {
+    content: '';
+    position: absolute;
+    top: -146%;
+    left: -18%;
+    width: 44%;
+    height: 257%;
+    transform: rotate(54deg);
+    background-color: rgb(31, 47, 64);
+    -webkit-transform: rotate(54deg);
+    -moz-transform: rotate(54deg);
+    -ms-transform: rotate(54deg);
+    -o-transform: rotate(54deg);
+    z-index: -10
+}
+
+.funnyFooter .footer-section:after {
+    position: absolute;
+    content: '';
+    background-color: rgb(31, 47, 64);
+    top: -24%;
+    right: 4%;
+    width: 26%;
+    height: 264%;
+    transform: rotate(44deg);
+    -webkit-transform: rotate(44deg);
+    -moz-transform: rotate(44deg);
+    -ms-transform: rotate(44deg);
+    -o-transform: rotate(44deg);
+    z-index: -10
+}
+
+.funnyFooter .footer-top {
+    padding-top: 40px;
+    padding-bottom: 50px
+}
+
+.funnyFooter .footer-top p,
+.funnyFooter .company-footer-contact-list li {
+    color: #ffffff
+}
+
+.funnyFooter .company-footer-contact-list {
+    margin-top: 30px
+}
+
+.funnyFooter .company-footer-contact-list li {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center
+}
+
+.funnyFooter .company-footer-contact-list li+li {
+    margin-top: 5px
+}
+
+.funnyFooter .company-footer-contact-list li i {
+    margin-right: 10px;
+    font-size: 20px;
+    display: inline-block
+}
+
+.funnyFooter .footer-top .site-logo {
+    margin-bottom: 25px;
+    display: block;
+    max-width: 170px
+}
+
+.funnyFooter .widget-title {
+    text-transform: capitalize
+}
+
+.funnyFooter .footer-top .widget-title {
+    color: #ffffff;
+    margin-bottom: 15px
+}
+
+.funnyFooter .courses-link-list li+li {
+    margin-top: 10px
+}
+
+.funnyFooter .courses-link-list li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    
+    font-weight: 400
+}
+
+.funnyFooter .courses-link-list li a:hover {
+    color: #ffb606
+}
+
+.funnyFooter .courses-link-list li i {
+    margin-right: 5px
+}
+
+.funnyFooter .footer-top .small-post-title a {
+    
+    color: #ffffff;
+    font-weight: 400
+}
+
+.funnyFooter .small-post-item .post-date {
+    color: #ffb606;
+    margin-bottom: 3px;
+    
+    font-weight: 400
+}
+
+.funnyFooter .small-post-list li+li {
+    margin-top: 30px
+}
+
+.funnyFooter .news-letter-form {
+    margin-top: 15px
+}
+
+.funnyFooter .news-letter-form input {
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.funnyFooter .news-letter-form .email-btn {
+    width: auto;
+    border: none;
+    background-color: #ffb606;
+    padding: 9px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #ffffff;
+    margin-top: 10px
+}
+
+.funnyFooter .footer-bottom {
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.149)
+}
+
+.funnyFooter .copy-right-text {
+    color: #ffffff
+}
+
+.funnyFooter .copy-right-text a {
+    color: #ffb606
+}
+
+.funnyFooter .terms-privacy li+li {
+    margin-left: 30px
+}
+
+.funnyFooter .terms-privacy li a {
+    color: #ffffff;
+    position: relative
+}
+
+.funnyFooter .terms-privacy li a:after {
+    position: absolute;
+    content: '-';
+    color: #ffffff;
+    display: inline-block;
+    top: 0;
+    right: -18px
+}
+
+.funnyFooter .terms-privacy li+li a:after {
+    display: none
+}
+.funnyFooter .number{
+    color: #fff;
+}
+
+@media (min-width: 564px) and (max-width: 767.98px) {
+    .funnyFooter .footer-top .widget-title{
+        margin-top: 25px !important;
+    }
+  }
+/* #funny(funnyFooter) #css ends */
+/*****funny*****/
+
